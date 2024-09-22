@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,27 +8,54 @@
     <!-- daisy ui and tailwind css link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        .lexend {
+            font-family: "Lexend", sans-serif;
+        }
+    </style>
 </head>
 
-<body>
-    <div class="w-full  mx-auto bg-zinc-100">
-        <nav>
-            <!-- navber -->
-            <div class="flex items-center justify-between px-3 h-[97px] ">
-                <button class="bg-[#B4F461] rounded-lg px-6 py-2 font-bold text-xl  ">Blog</button>
-                <div class="flex items-center  gap-3 ">
-                    <img src="./assets/logo.png" alt="">
-                    <h1 class="text-[#111111] font-bold text-xl">Donate Bangladesh</h1>
-                </div>
-                <!-- coin -->
-                <div class="flex gap-3 ">
-                    <img src="./assets/coin.png" alt="">
-                    <h1 class="text-xl font-bold opacity-60">5500 BDT</h1>
+<body class="lexend">
+    <header>
+        <div class="w-full  mx-auto max-sm:w-full  ">
+            <nav class="lg:w-10/12 mx-auto max-sm:flex sm:justify-between sm:items-center sm:flex-col">
+                <!-- navber -->
+            <div class="">
+                <div class="flex items-center justify-between px-10 h-[97px] bg-red-50 max-sm:flex max-sm:justify-center max-sm:items-center ">
+                    <button class="bg-[#B4F461] rounded-lg px-6 py-2 font-bold text-xl  ">Blog</button>
+                    <div class="flex items-center  gap-3 ">
+                        <img src="./assets/logo.png" alt="">
+                        <h1 class="text-[#111111] font-bold text-xl">Donate Bangladesh</h1>
+                    </div>
+                    <!-- coin -->
+                    <div class="flex gap-3 ">
+                        <img src="./assets/coin.png" alt="">
+                        <h1 class="text-xl font-bold opacity-60">5500 BDT</h1>
+                    </div>
                 </div>
             </div>
-            <!-- navber end -->
-        </nav>
-    </div>
+                <!-- navber end -->
+            </nav>
+        </div>
+    </header>
+    <!-- main -->
+    <main class="w-full mx-auto mt-20 px-16 max-sm:w-full max-sm:px-2">
+        <!-- two button -->
+        <div>
+            <div class=" gap-4 flex w-fit mx-auto ">
+                <button class="text-xl font-bold bg-[#B4F461] rounded-lg px-6 py-2 ">Donation</button>
+                <button
+                    class="text-xl font-bold text-[#111111] opacity-70 bg-[#adf1e94d] px-6 py-2 rounded-lg border-red-500 border-2">History</button>
+            </div>
+        </div>
+        <!-- two button end -->
+
 </body>
 
 </html>
